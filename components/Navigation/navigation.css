@@ -1,0 +1,123 @@
+.navigator {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navigator__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    max-height: 100px;
+    padding: 0 2rem;
+}
+
+.navigator__logo {
+    padding: 0.3rem;
+    border: 1px solid white;
+    font-family: Crimson Pro;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navigator__iconMenu {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navigator__expand-container {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+.navigator__expand-logo {
+    align-self: flex-end;
+    font-size: 2rem;
+    height: 5rem;
+    max-height: 100px;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+.navigator__links-container {
+    height: calc(90vh - 5rem);
+    display: grid; align-items:center;
+}
+.navigator__links {
+    list-style: none;
+    margin: 0; padding: 0;  
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 15rem;
+}
+
+.navigator__links li {
+    position: relative;
+}
+
+.navigator__links li a {
+    font-family: Montserrat;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.navigator__links li a::after {
+    background-color: #FFF;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out; 
+    transform: scaleX(0);
+}
+.navigator__links li a:hover::after {
+    font-weight: 700;
+    transform: scaleX(1);
+}
+
+.navigator__links li a {
+    cursor: pointer;
+}
+
+.navigator__links-web {
+    display: none;
+}
+
+
+@media screen and (min-width: 650px) {
+    .navigator__container {
+        padding: 0 4rem;
+    }
+    .navigator__iconMenu {
+        display: none;
+    }
+    .navigator__links-web {
+        display: block;
+    }
+    .navigator__links {
+        display: flex;
+        flex-flow: row nowrap;
+        height: auto;
+        gap: 3rem;
+    }
+    .navigator__links li {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
