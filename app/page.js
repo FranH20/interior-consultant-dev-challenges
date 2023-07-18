@@ -1,10 +1,16 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import MainNavigation from '../components/MainContent'
+import Information from '../components/Information'
 
 export default function Home() {
   return (
     <>
-      <h1>H</h1>
+      <main>
+        <MainNavigation />
+        <Information />
+        <footer></footer>
+      </main>
     </>
   )
 }

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { FiMenu, FiX } from "react-icons/fi";
-import './navigation.css'
+import './style.css'
 
 const Navigation = () => {  
   const [mobileMenu, setMobileMenu] = useState(false);

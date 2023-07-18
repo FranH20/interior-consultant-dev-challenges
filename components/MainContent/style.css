@@ -1,0 +1,35 @@
+.mainNavigation {
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 1rem;
+}
+.mainNavigation__title {
+    margin: 0;
+    font-family: Lora;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.mainNavigation__description {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 250px;
+}
+
+.mainNavigation__info-container {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.mainNavigation__info-container span {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
